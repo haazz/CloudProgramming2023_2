@@ -1,0 +1,7 @@
+---
+applications:
+- name: djangoblog-28
+  buildpack: paketo-community/python
+  memory: 512M
+  instances: 1
+  command: waitress-serve --port=8080 CloudProgramming2023_2.wsgi:application
